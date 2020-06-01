@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Prediction Outputs</title>
+
+ 
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Ranking Outputs</h1>
+</header>
+    <!-- The sidebar -->
+    <div class="sidenav">
+      <a href="index.html">Home</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="visual.html">Visualizations</a>
+      <a href="prediction2.html">Rankings Table</a>
+      <a href="prediction.html">Ranking Search</a>
+      <a href="data.html">Our Data</a>
+        <i class="fa fa-caret-down"></i>
+    </div>
+  <!-- Page content -->
+  <div class="content">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="form-group">
+              <label for="predition-form">Filter Player by Ranking</label>
+              <input class="form-control" id="prediction-form-input" type="text" placeholder="Top 50">
+            </div>
+            <button id="button" type="button" class="btn btn-default">Enter</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Filtered Data Summary</h1>
+          <div class="col-md-12">
+            <div id="table-area" class="">
+              <table id="ufo-table" class="table table-striped table-bordered">
+              <style>
+                table,
+                th,
+                td {
+                  padding: 10px;
+                  border: 1px solid black;
+                  border-collapse: collapse;
+                }
+              </style>
+                <thead>
+                  <tr>
+                    <th class="table-head">Index</th>
+                    <th class="table-head">WR Name</th>
+                    <th class="table-head">Year</th>
+                    <th class="table-head">PPR Pts</th>
+                    <th class="table-head">Targets (Tgt)</th>
+                    <th class="table-head">Receptions</th>
+                    <th class="table-head">Rec Yds</th>
+                    <th class="table-head">Air Yds (AY)</th>
+                    <th class="table-head">YAC</th>
+                    <th class="table-head">TDs</th>
+                    <th class="table-head">aDOT</th>
+                    <th class="table-head">RACR</th>
+                    <th class="table-head">Market Share AY</th>
+                    <th class="table-head">Tgt Share</th>
+                    <th class="table-head">WOPR</th>
+                    <th class="table-head">Unrealized AY (UAY)</th>
+                    <th class="table-head">Catch Rate</th>
+                    <th class="table-head">Yds/TGT</th>
+                    <th class="table-head">Yds/Rec</th>
+                    <th class="table-head">AY/Tgt</th>
+                    <th class="table-head">AY/Rec</th>
+                    <th class="table-head">UAY/Tgt</th>
+                    <th class="table-head">UAY/Rec</th>
+                    <th class="table-head">YAC/Tgt</th>
+                    <th class="table-head">YAC/Rec</th>
+                    <th class="table-head">2019 PPR Rank</th>
+                    <th class="table-head">2020 Model Rank</th>
+                    <th class="table-head">Rank Differential</th>
+                  </tr>
+                </thead>
+                <tbody id="ufo-body"></tbody>
+              </table>
+          <ul class="summary"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.html"></script>
+    <script src="data.html"></script>
+    <script src="visual.html"></script>
+    <script src="data.js"></script>
+    <script src="test-app.js"></script>
+      <!-- The sidebar
+      <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="visual.html">Visualizations</a>
+        <a href="prediction.html">Prediction Outputs</a>
+        <a href="data.html">Our Data</a>
+          <i class="fa fa-caret-down"></i>
+      </div> -->
+    
+  </div>
+  </main>
+
+</body>
+
+</html>
